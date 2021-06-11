@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-image: url("./bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.main{
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+width:50%; height:auto; text-align: center;
+margin-left: 300px;
+margin-top: 50px;
+
+}
+.main:hover{
+    background: rgba( 255, 255, 255, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width:50%; height:auto; text-align: center;
+margin-left: 300px;
+margin-top: 50px;
+transition-timing-function: ease-in;
+transition-duration: 0.2s;
+}
+input{
+border-radius: 50px;
+height:30px;
+}
+select{
+    border-radius: 50px;
+height:30px;
+
+}
+h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+</style>
+</head>
+<body>
+   <div align="center"  class="main">
+<form>
+    <div ><h1 style="margin-top: 0%; background-color: rgba(104, 100, 100, 0.726);">REGISTRTION FORM</h1></div>
+    <div class="name">
+        <h2 align="left" style="display:inline-flex;position:relative;top:0;Right:50px;">Name</h2>
+        <input  style="position:relative; left:70px;" type="text" name="fname" id="fname" placeholder="John">
+        <label style="position:relative; top:25px; right:90px;" for="fname">Enter first name</label>
+        <input  style="position:relative; left:70px;"type="text" name="lname" id="lname" placeholder="Doe">
+        <label style="position:relative; top:25px; right:90px;"for="lname">Enter last name</label>
+    </div>
+    <div class="company">
+        <h2 align="left"style="display:inline-flex;position:relative;top:0;Right:6px;">Company</h2>
+        <input  style="position:relative; left:70px;" type="text" name="cname" id="cname" size="65"/ placeholder="LAXMI CHIT FUND">
+        <label style="position:relative; top:25px; right:380px;"for="cname">Enter company name</label>
+    </div>
+    <div class="email">
+    <h2 align="left" style="display:inline-flex;position:relative;top:0;left:20px;">Email</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input style="position:relative; left:70px;" type="email" name="email" id="email" size="65"/ placeholder="xyz@xxxxx.com">
+    <label style="position:relative; top:25px; right:370px;"for="email">Enter your email address</label>
+    </div>
+    <div class="phn">
+        <h2 align="left" style="display:inline-flex;position:relative;top:0;Right:0px;">Phone</h2>
+        <input style="position:relative; left:118px;" type="text" name="code" id="code" size="10" placeholder="+91">
+        <label style="position:relative; top:25px; left:20px;" for="code">Enter area code</label>
+        <input  style="position:relative; left:70px;" type="tel" name="num" id="num" size="40" placeholder="123456789">
+        <label style="position:relative; top:25px; right:220px;" for="num">Enter contact number</label>
+    </div>
+    <br>
+    <div class="subject">
+        <h2 align="left" style="display:inline-flex;position:relative;top:0;Right:40px;">Subject</h2>
+        <select style="position:relative; left:70px; width:450px;" name="subj" id="subj" min-width="100px" style="width:465px;">
+            <option value="subj1" disabled>--CHOOSE OPTION</option>
+            <option value="subj2">SUBJECT1</option>
+            <option value="subj3">SUBJECT2</option>
+            <option value="subj4">SUBJECT3</option>
+            <option value="subj5">SUBJECT4</option>
+            <option value="subj6">SUBJECT5</option>
+            <option value="subj">SUBJECT6</option>
+        </select>
+        <label style="position:relative; top:25px; right:380px;" for="subj">Choose subject</label>
+    </div>
+
+<div class="option">
+    <h2 align="left" style="display:inline-flex;position:relative;top:0;Right:188px;">Are you a beginner?</h2>
+<input style="position:relative; left:70px;width:20px;height:20px;"  type="radio" name="level" id="yes"/>
+<label style="position:relative; top:25px; right:175px;" for="yes">Yes</label>
+<input style="position:relative; left:-205px;width:20px;height:20px;" type="radio" name="level" id="no"/>
+<label style="position:relative; top:25px; right:10px;" for="no">No</label>
+</div>
+<br>
+<div class="submit">
+    <input type="submit" value="SUBMIT" style="background-color: aqua;font-family:monospace;font-size:xx-large;font-family:monospace; text-align: center; width:100%; height:40px;position:relative; ">
+</div>
+</form>
+   </div>
+</body>
+</html>
